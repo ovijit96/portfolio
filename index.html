@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ovijit Kumar Dey — Frontend Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ======= TOP BAR ======= -->
+  <header class="topbar">
+    <div class="top-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1 id="name-bar">YOUR NAME</h1>
+          <div class="role muted">Frontend Developer (HTML • CSS • JS)</div>
+        </div>
+      </div>
+      <div class="actions row">
+        <button class="btn" id="themeToggle" aria-label="Toggle theme">Toggle Theme</button>
+        <a class="btn" href="Ovijit_Kumar_Dey_CV.pdf" download>Download PDF</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container grid">
+    <!-- ======= HERO + SIDEBAR ======= -->
+    <section class="grid grid-2">
+      <div class="panel">
+        <h2 style="margin:0 0 4px" id="name">YOUR NAME</h2>
+        <div class="muted" id="location">Your City, Country</div>
+        <p id="summary" style="margin-top:12px">
+          Passionate frontend developer skilled in semantic HTML, modern CSS, and vanilla JavaScript.
+          I build fast, accessible, and responsive interfaces with clean UX and subtle interactions.
+        </p>
+        <div class="row" style="margin-top:12px; flex-wrap:wrap; gap:8px">
+          <a class="btn" id="github" href="https://github.com/yourhandle" target="_blank">GitHub</a>
+          <a class="btn" id="linkedin" href="https://linkedin.com/in/yourhandle" target="_blank">LinkedIn</a>
+          <a class="btn" id="website" href="#" target="_blank">Website</a>
+          <a class="btn btn-primary" id="emailBtn" href="mailto:you@example.com">Contact Me</a>
+        </div>
+      </div>
+
+      <aside class="panel">
+        <h3 style="margin:0">Contact</h3>
+        <ul class="muted" style="list-style:none; padding:0; margin:10px 0 0">
+          <li>Email: <a id="email" href="mailto:you@example.com">you@example.com</a></li>
+          <li>Phone: <span id="phone">+8801XXXXXXXXX</span></li>
+        </ul>
+        <h3 style="margin:18px 0 6px">Core Skills</h3>
+        <div class="chips" id="skills"></div>
+      </aside>
+    </section>
+
+    <!-- ======= PROJECTS ======= -->
+    <section class="panel page-break">
+      <div class="section-title">
+        <h3 style="margin:0">Projects</h3>
+        <span class="muted" style="font-size:12px">Top 3 highlighted</span>
+      </div>
+      <div class="projects" id="projects"></div>
+    </section>
+
+    <!-- ======= EXPERIENCE & EDUCATION ======= -->
+    <section class="grid grid-2 page-break">
+      <div class="panel">
+        <h3 style="margin:0">Experience</h3>
+        <div id="experience" style="margin-top:10px; display:grid; gap:12px"></div>
+      </div>
+      <div class="panel">
+        <h3 style="margin:0">Education</h3>
+        <div id="education" style="margin-top:10px; display:grid; gap:12px"></div>
+        <!-- <div class="card" style="margin-top:14px">
+          <strong>Tip:</strong>
+          <div class="muted">Add short bullet points focused on impact: performance gains, accessibility, DX improvements.</div>
+        </div> -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <span id="copyright">© <span id="year"></span> Ovijit Kumar Dey</span> ·
+    <a href="#" class="muted">Privacy</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
